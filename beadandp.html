@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+  <meta charset="UTF-8">
+  <title>Szállodai Foglalás</title>
+  <link rel="stylesheet" href="css.css">
+</head>
+<body>
+  <div class="container">
+    <h2>Szállodai Foglalás</h2>
+    
+    <div style="display: flex; align-items: center; gap: 1px; margin-bottom: 8px;">
+  <label for="nev" style="min-width: 45px;">Név:</label>
+  <input type="text" id="nev" placeholder="Gipsz Jakab">
+</div>
+
+<div style="display: flex; align-items: center; gap: 1px; margin-bottom: 8px;">
+  <label style="min-width: 50px;">Nem:</label>
+  <input type="radio" name="nem" id="ferfi" checked>
+  <label for="ferfi">Férfi</label>
+  <input type="radio" name="nem" id="no">
+  <label for="no">Nő</label>
+</div>
+
+<div style="display: flex; gap: 20px; align-items: center; margin-bottom: 10px; ;">
+  <label for="tenger">Tengerre néző
+    <input type="checkbox" id="tenger" style="margin-left: 5px;">
+  </label>
+  <label for="egyagyas">Egyágyas szoba
+    <input type="checkbox" id="egyagyas" style="margin-left: 5px;">
+  </label>
+</div>
+
+<div style="display: flex; align-items: center; gap: 10px; margin-bottom: 8px;">
+  <label for="tel" style="min-width: 100px;">Telefonszám:</label>
+  <input type="text" id="tel" placeholder="+36304447777">
+</div>
+
+<div style="display: flex; align-items: center; gap: 10px; margin-bottom: 8px;">
+  <label for="email" style="min-width: 100px;">E-mail:</label>
+  <input type="email" id="email" placeholder="valami@gmail.com">
+</div>
+
+<div style="display: flex; align-items: center; gap: 10px; margin-bottom: 8px;">
+  <label for="letszam" style="min-width: 100px;">Hány személyre:</label>
+  <input type="number" id="letszam" min="1" value="1">
+</div>
+
+<div style="display: flex; align-items: center; gap: 10px; margin-bottom: 8px;">
+  <label for="erkezes" style="min-width: 100px;">Érkezés dátuma:</label>
+  <input type="date" id="erkezes">
+</div>
+
+<div style="display: flex; align-items: center; gap: 10px; margin-bottom: 8px;">
+  <label for="tavozas" style="min-width: 100px;">Távozás dátuma:</label>
+  <input type="date" id="tavozas">
+</div>
+
+    <button class="simple-btn" onclick="szamolas()">Fizetendő összeg kiszámítása</button>
+
+    <p id="osszeg"></p>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
