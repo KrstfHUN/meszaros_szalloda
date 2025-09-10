@@ -1,0 +1,1 @@
+# meszaros_szalloda
